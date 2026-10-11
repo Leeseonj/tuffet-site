@@ -32,7 +32,8 @@ a{color:var(--accent)}
 <main>
 <h1>개인정보처리방침</h1>
 <p><strong>서비스명:</strong> Tuffet (터핏)</p>
-<p><strong>시행일:</strong> 2026년 9월 5일</p>
+<p><strong>시행일:</strong> 2026년 10월 11일 (이전: 2026년 9월 5일)</p>
+<p><a href="#en">English version below</a></p>
 <p>Tuffet(이하 &quot;서비스&quot;)은 이용자의 개인정보를 소중히 다루며, 개인정보보호법 등 관계 법령을 준수합니다.</p>
 <h2>1. 수집하는 개인정보 항목</h2>
 <p>서비스는 <strong>꼭 필요한 최소한만</strong> 수집합니다.</p>
@@ -47,13 +48,24 @@ a{color:var(--accent)}
 <blockquote>서비스는 <strong>광고 식별자를 수집하지 않으며, 이용 기록을 광고에 사용하지 않습니다.</strong></blockquote>
 <h2>2. 개인정보의 이용 목적</h2>
 <ol><li>목표를 계획으로 나누고 매일 할 일을 보여주기</li><li>이용자가 설정한 시간에 알림 보내기</li><li>유료 기능 이용 권한 확인</li><li>오류 파악과 서비스 개선</li></ol>
-<p><strong>AI 처리에 관하여</strong>: 유료 기능인 계획 자동 생성은 이용자가 입력한 목표 텍스트와 상황 정보를 외부 AI 처리 업체에 전달하여 수행됩니다. 이때 <strong>이름·이메일·연락처 등 이용자를 식별할 수 있는 정보는 전달하지 않습니다.</strong></p>
+<h2 id="ai">2-1. 외부 AI 서비스로의 전송</h2>
+<p>AI 계획 생성(유료 기능·7일 체험)과 AI 재조정은 아래 정보를 외부 AI 서비스로 보내 처리합니다. <strong>앱은 처음 보내기 전에 무엇을·누구에게 보내는지 화면으로 보여주고 동의를 받습니다.</strong> 동의하지 않으면 AI로 아무것도 보내지 않으며, 직접 계획 짜기 등 나머지 기능은 그대로 쓸 수 있습니다. 동의는 앱 → 나 → &quot;AI에 보내는 정보&quot;에서 언제든 철회할 수 있습니다.</p>
+<div class="tw"><table><thead><tr><th>보내는 정보</th><th>수집 방법</th><th>용도</th></tr></thead><tbody>
+<tr><td>목표 문장, 카테고리, 기한, 강도</td><td>이용자가 목표 입력 화면에 직접 입력·선택</td><td>단계·활동·첫 주 할 일 계획 생성</td></tr>
+<tr><td>상황 질문에 고른 답 (예: 하루 가능 시간, 학습 단계, 주당 운동 가능 횟수)</td><td>이용자가 상황 질문 화면에서 선택 (&quot;아직 몰라&quot;는 보내지 않음)</td><td>계획을 이용자 상황에 맞추기</td></tr>
+<tr><td>못 끝낸 할 일의 이름과 날짜, 목표 이름</td><td>이용자가 앱에 기록한 할 일</td><td>AI 재조정 제안 (적용은 이용자가 직접 확인 후)</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>받는 곳</th><th>하는 일</th></tr></thead><tbody>
+<tr><td>Google LLC — Gemini API</td><td>계획 생성, 재조정 제안</td></tr>
+<tr><td>Anthropic PBC — Claude API</td><td>생성된 계획의 사실 오류 검수</td></tr>
+</tbody></table></div>
+<ul><li>전송은 서비스 서버(Google Firebase)를 거쳐 암호화(HTTPS)된 구간으로 이루어집니다.</li><li><strong>이름·닉네임·이메일·연락처·계정 식별자는 보내지 않습니다.</strong> 다만 이용자가 목표 문장에 직접 적은 내용은 그대로 전달되니, 민감한 개인정보는 적지 않기를 권합니다.</li><li>AI 결과는 계획을 만들어 보여주는 데에만 쓰고, 광고·프로파일링에 쓰지 않습니다.</li><li>위 업체들은 각자의 API 이용약관에 따라 요청을 처리하며, 서비스가 적용하는 수준과 <strong>같거나 그 이상의 보호 조치</strong>(전송 암호화, 접근 통제, 보안 인증)를 갖춘 업체입니다.</li></ul>
 <h2>3. 보유 및 이용 기간</h2>
 <ul><li>회원 탈퇴 시 <strong>지체 없이 파기</strong>합니다.</li><li>앱 내 &quot;계정 삭제&quot;를 실행하면 서비스가 보관한 이용자 데이터(목표·할 일·기록·이용 기록·푸시 토큰·구독 정보)가 삭제되고 계정이 함께 삭제됩니다.</li><li>관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관 후 파기합니다.</li></ul>
 <h2>4. 개인정보의 제3자 제공</h2>
 <p>서비스는 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.</p>
 <p>다만 서비스 제공을 위해 아래 업체에 처리를 위탁합니다.</p>
-<div class="tw"><table><thead><tr><th>수탁사</th><th>위탁 업무</th><th>이전 국가</th></tr></thead><tbody><tr><td>Google (Firebase)</td><td>데이터 보관, 인증, 알림 발송, 서버 기능</td><td>미국</td></tr><tr><td>Google (Gemini API)</td><td>계획 자동 생성(유료 기능)</td><td>미국</td></tr><tr><td>Anthropic</td><td>문구 생성(유료 기능)</td><td>미국</td></tr><tr><td>RevenueCat</td><td>구독 상태 확인</td><td>미국</td></tr><tr><td>Apple</td><td>결제 처리</td><td>미국</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>수탁사</th><th>위탁 업무</th><th>이전 국가</th></tr></thead><tbody><tr><td>Google (Firebase)</td><td>데이터 보관, 인증, 알림 발송, 서버 기능</td><td>미국</td></tr><tr><td>Google (Gemini API)</td><td>계획 생성·재조정(유료 기능)</td><td>미국</td></tr><tr><td>Anthropic (Claude API)</td><td>계획 검수(유료 기능)</td><td>미국</td></tr><tr><td>RevenueCat</td><td>구독 상태 확인</td><td>미국</td></tr><tr><td>Apple</td><td>결제 처리</td><td>미국</td></tr></tbody></table></div>
 <p>이용자는 국외 이전을 거부할 수 있으나, 이 경우 서비스 이용이 제한될 수 있습니다.</p>
 <h2>5. 이용자의 권리</h2>
 <p>이용자는 언제든지 다음을 할 수 있습니다.</p>
@@ -70,6 +82,40 @@ a{color:var(--accent)}
 <ul><li>개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118)</li><li>대검찰청 사이버수사과 (spo.go.kr / 1301)</li><li>경찰청 사이버수사국 (ecrm.police.go.kr / 182)</li></ul>
 <h2>9. 고지의 의무</h2>
 <p>이 방침의 내용이 변경되는 경우 시행 7일 전부터 앱 공지사항 또는 이 페이지를 통해 알립니다.</p>
+
+<h1 id="en" style="margin-top:72px">Privacy Policy (English)</h1>
+<p><strong>Service:</strong> Tuffet · <strong>Effective:</strong> October 11, 2026</p>
+<p>If the Korean and English versions differ, the version in the language of your app applies.</p>
+<h2>1. What we collect</h2>
+<ul><li><strong>What you enter:</strong> a nickname (optional), your goals and tasks (needed to make your plan), answers to optional setup questions such as daily available time or level (&quot;Not sure yet&quot; is not stored), and reminder times (optional). We do not ask for or collect height, weight, calories, or BMI.</li>
+<li><strong>Account info:</strong> Sign in with Apple — a unique identifier and, if you allow it, your email. Google — a unique identifier and email. Without signing in, only an anonymous identifier is created.</li>
+<li><strong>Generated automatically:</strong> in-app usage events (screens opened, tasks completed) to improve the service, a push token to send reminders, and subscription status from Apple.</li></ul>
+<p>We do not collect advertising identifiers and do not use your data for ads.</p>
+<h2>2. How we use it</h2>
+<ol><li>Turning your goal into a plan and showing today&#39;s tasks</li><li>Sending reminders at the times you choose</li><li>Checking access to paid features</li><li>Fixing errors and improving the service</li></ol>
+<h2 id="en-ai">2-1. Sharing with third-party AI services</h2>
+<p>AI plan building (paid feature and 7-day trial) and AI re-planning send the information below to outside AI services. <strong>Before anything is sent for the first time, the app shows what will be sent and to whom, and asks for your permission.</strong> If you don&#39;t agree, nothing is sent to AI and you can keep planning on your own. You can withdraw anytime in the app under Me → &quot;What we send to AI&quot;.</p>
+<div class="tw"><table><thead><tr><th>Data sent</th><th>How it is collected</th><th>Use</th></tr></thead><tbody>
+<tr><td>Goal text, category, deadline, pace</td><td>You type or select it on the goal screens</td><td>Building stages, activities, and first-week tasks</td></tr>
+<tr><td>Answers to setup questions (e.g., daily time, level, workouts per week)</td><td>You select them on the setup questions screen (&quot;Not sure yet&quot; is not sent)</td><td>Fitting the plan to your situation</td></tr>
+<tr><td>Names and dates of unfinished tasks, goal name</td><td>Tasks you recorded in the app</td><td>Suggesting a re-plan (applied only after you confirm)</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>Recipient</th><th>Role</th></tr></thead><tbody>
+<tr><td>Google LLC — Gemini API</td><td>Builds plans and re-plan suggestions</td></tr>
+<tr><td>Anthropic PBC — Claude API</td><td>Checks generated plans for factual errors</td></tr>
+</tbody></table></div>
+<ul><li>Data travels encrypted (HTTPS) through our server (Google Firebase).</li><li><strong>Your name, nickname, email, contact info, and account identifiers are never sent.</strong> Anything you write in the goal text itself is sent as written, so please avoid putting sensitive personal details there.</li><li>AI output is used only to build and show your plan — never for ads or profiling.</li><li>These providers process requests under their API terms and maintain protections <strong>equal to or stronger than ours</strong> (encryption in transit, access controls, security certifications).</li></ul>
+<h2>3. Retention</h2>
+<p>When you use &quot;Delete account&quot; in the app (Me tab), the data we store — goals, tasks, records, usage events, push tokens, subscription info — is deleted along with your account, except where the law requires us to keep it.</p>
+<h2>4. Service providers</h2>
+<div class="tw"><table><thead><tr><th>Provider</th><th>Purpose</th><th>Location</th></tr></thead><tbody><tr><td>Google (Firebase)</td><td>Storage, authentication, notifications, server functions</td><td>USA</td></tr><tr><td>Google (Gemini API)</td><td>Plan building and re-planning (paid feature)</td><td>USA</td></tr><tr><td>Anthropic (Claude API)</td><td>Plan checking (paid feature)</td><td>USA</td></tr><tr><td>RevenueCat</td><td>Subscription status</td><td>USA</td></tr><tr><td>Apple</td><td>Payments</td><td>USA</td></tr></tbody></table></div>
+<p>We never sell your personal data.</p>
+<h2>5. Your rights</h2>
+<p>You can view and edit your data in the app, delete it via Me → Delete account, withdraw AI consent anytime, and contact us to object to or restrict processing. We do not knowingly collect data from children under 14.</p>
+<h2>6. Contact</h2>
+<p>Privacy officer: Seonjae Lee · leeseonj1214@gmail.com</p>
+<h2>7. Changes</h2>
+<p>We announce changes on this page at least 7 days before they take effect.</p>
 </main>
 </body>
 </html>
